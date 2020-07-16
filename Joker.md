@@ -1,0 +1,1 @@
+i believe whatever doesn't kill you simply makes you stranger
