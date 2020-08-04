@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+
+    <link rel = "stylesheet" href = "./style.css">
+</head>
+<body>
+    <form action="https://server.ai-school.com" method="POST">
+    <label for="user_id">ID</label>
+    
+    <input id='aaa' type="text" name="userid" placeholder="ID : " />
+    
+    <label for="user_pw">PW</label>
+    <input id='aaa' type="password" name="userpw" placeholder="PW : " />
+    <br />
+    <br />
+    <label for = 'chekc_pw'> 비번찾기:내가좋아하는음식은? </label>
+    <select id="aaa" name="interest">
+        <option value="한식">한식</option>
+        <option value="중식">중식</option>
+        <option value="일식">일식</option>    
+    </select>
+    <br />
+    <br />
+    <br />
+    <br />
+    <h4>자기소개</h4>
+    <div></div>
+    <input name="name" placeholder="이름" type="text" />
+    <input name="age" placeholder="나이" type="text" />
+   
+    <br />
+    <textarea id="bboxid" name="content" cols="50" rows="10">
+    하고싶은말
+    </textarea>
+
+    
+    <button name="submit" type="submit">
+        전송하기
+    </button>
+    </form>
+</body>
+</html>
+
+
+
+<!-- 광주인공지능 사관학교 자기소개 사이트,
+로그인 하는 페이지 만들기
+- 아이디
+- 비밀번호
+- 비밀번호 질문 받기 (label 과 select 태그 활용)
+- 자기소개 작성할 수 있는 폼 받기 -->
