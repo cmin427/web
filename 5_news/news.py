@@ -15,12 +15,12 @@ for i in range(1,102,10):
     response = requests.get(URL)
     soup = BeautifulSoup(response.text, 'html.parser')
     news_result.append(soup)
-
+print(type(soup))
 print(len(news_result))
 m = 0
 for i in news_result:
         
-    soup1 = i.select('div[id=wrap] > div[id=container] > div[id=content] > div[id=main_pack] > div.news.mynews.section._prs_nws > ul[class=type01] > li')
+    soup1 = i.select('ul[class=type01] > li')
     for j in soup1:
         a = j.select_one("dl > dt > a")
 
